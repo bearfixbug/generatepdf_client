@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+        
+</head>
+<body id="page">
+    <!-- id="btnExportToPDF" -->
+    <button onclick="generatePDF()">export pdf</button>
+  
+    <h2>hello world</h2>
+    <table id="table1">
+      <tr>
+        <td colspan="11" style="background: var(--blue); color: #fff;">
+          <p>WEEKLY SUMMARY : 6-12 November 2021</p>
+        </td>
+        <td colspan="2" rowspan="3">
+          <img src="https://locanation.com/img/logo-locanation-2.png" alt="locanation logo" style="width: 150px; object-fit: contain;">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="12">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="tl cl-primary" style="font-size: 20px; font-weight: 700;">
+          <p>CLIENT</p>
+        </td>
+        <td colspan="3"></td>
+        <td colspan="3" class="tc cl-primary" style="font-size: 20px; font-weight: 700;">
+          <p>No. of Bookings</p>
+        </td>
+        <td colspan="3" class="tc cl-primary" style="font-size: 20px; font-weight: 700;">
+          <p>Total Value</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="tl cl-primary" style="font-weight: 700;">
+          <p>Hotel</p>
+        </td>
+        <td colspan="3">
+          <p>Siam Mandarina Hotel</p>
+        </td>
+        <td colspan="3" class="tc" style="font-size: 20px; font-weight: 700;">
+          <p>14</p>
+        </td>
+        <td colspan="3" class="tc" style="font-size: 20px; font-weight: 700;">
+          <p>95,200</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="tl cl-primary" style="font-weight: 700;">
+          <p>Contact Person</p>
+        </td>
+        <td colspan="11">
+          <p>xxxxxxxxxxx</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="tl cl-primary" style="font-weight: 700;">
+          <p>Address</p>
+        </td>
+        <td colspan="3">
+          <p>xxxxxxxxxxxxx</p>
+        </td>
+        <td colspan="3" class="tc cl-primary" style="font-size: 20px; font-weight: 700;">
+          <p>Deposit Rate</p>
+        </td>
+        <td colspan="3" class="tc cl-primary" style="font-size: 20px; font-weight: 700;">
+          <p>Total Deposit Amount</p>
+        </td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="tl cl-primary" style="font-weight: 700;">
+          <p>Phone</p>
+        </td>
+        <td colspan="3">
+          <p>02-123-1234</p>
+        </td>
+        <td colspan="3" class="tc" style="font-size: 20px; font-weight: 700;">
+          <p>100%</p>
+        </td>
+        <td colspan="3" class="tc" style="font-size: 20px; font-weight: 700;">
+          <p>95,120</p>
+        </td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="tl cl-primary" style="font-weight: 700;">
+          <p>Email</p>
+        </td>
+        <td colspan="11">
+          <p>exam@gmail.com</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="tl cl-primary" style="font-weight: 700;">
+          <p>Date</p>
+        </td>
+        <td colspan="11">
+          <p>2021-11-15</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="13">&nbsp;</td>
+      </tr>
+      <tr class="tc thead" style="font-size: 14px;">
+        <td>Booking ID</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Customer's Email</td>
+        <td>Check-in</td>
+        <td>Check-out</td>
+        <td>Guest</td>
+        <td>Deposit Rate</td>
+        <td>Payment Amount</td>
+        <td>Commission Fee</td>
+        <td>Commission Amount</td>
+        <td>Payment to Hotel</td>
+        <td>Status</td>
+      </tr>
+      <tr class="tbody" style="font-size: 14px;">
+        <td>XXXX</td>
+        <td>Bearbug</td>
+        <td>5,000</td>
+        <td>bearbug@gmail.com</td>
+        <td>2021-12-21</td>
+        <td>2021-12-23</td>
+        <td>1 Adult</td>
+        <td>100%</td>
+        <td>5,000</td>
+        <td>5%</td>
+        <td>310</td>
+        <td>5,310</td>
+        <td>Cleared</td>
+      </tr>
+      <tr style="font-size: 14px;">
+        <td colspan="9"></td>
+        <td colspan="2" style="border: 1px solid #000;">Total payment to hotel</td>
+        <td class="tl" style="border: 1px solid #000;">90,400.00</td>
+        <td></td>
+      </tr>
+      <tr style="font-size: 14px;">
+        <td colspan="9"></td>
+        <td colspan="2">Total commission</td>
+        <td class="tl">5,000.00</td>
+        <td></td>
+      </tr>
+      <tr style="font-size: 14px;">
+        <td colspan="9"></td>
+        <td colspan="2">VAT</td>
+        <td class="tl">311.00</td>
+        <td></td>
+      </tr>
+      <tr style="font-size: 14px;">
+        <td colspan="9"></td>
+        <td colspan="2">Total Excluding</td>
+        <td class="tl">4,120.00</td>
+        <td></td>
+      </tr>
+      <tr style="font-size: 14px;">
+        <td colspan="9"></td>
+        <td colspan="2">WAT</td>
+        <td class="tl">133.00</td>
+        <td></td>
+      </tr>
+      <tr style="font-size: 14px;">
+        <td colspan="9"></td>
+        <td colspan="2" style="background: yellow;">Total payment to hotel</td>
+        <td class="tl" style="background: yellow;">90,231.00</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.4/jspdf.plugin.autotable.min.js"></script> -->
+    <script>
+        function generatePDF() {
+            console.log(1)
+            const element = document.querySelector("#page")
+            var opt = {
+                margin:       1,
+                filename:     `Locanation_report.pdf`,
+                image:        { type: 'jpeg', quality: 1 },
+                html2canvas:  { scale: 2 },
+                jsPDF:        { unit: 'cm', format: 'A4', orientation: 'landscape' }
+            };
+
+                // New Promise-based usage:
+            html2pdf().set(opt).from(element).save();
+            // html2pdf().from(element).save();
+        }
+
+        
+    </script>
+</body>
+</html>
